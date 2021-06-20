@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-page{
+    /* width: 80%; */
+    background-color: rgb(241, 241, 241);
+    margin: auto;
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+.banner{
+    background-image: url(https://image.freepik.com/free-vector/abstract-blue-futuristic-background_23-2148413498.jpg);
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 800px;
+}
+.menu{
+    border-bottom: 1px solid #caa05c;
+    background-color: rgba(0, 0, 0, 0.651);
+}
+.logo{
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    margin-right: 3%;
+}
+.logo a{
+    color: #f3b045;
+    text-decoration: none;
+    font-size: 40px;
+    transition: .5s;
+}
+.logo a{
+    color: #f3b045;
+    text-decoration: none;
+    font-size: 40px;
+    transition: .5s;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+.logo a:hover{
+    color: white;
+    /* font-style: italic; */
+
+}
+span{
+    color: white;
+    font-size: 35px;
+    font-style: italic;
+    transition: .5s;
+}
+.logo a:hover span{
+    /* font-size: 40px; */
+    transform: scale(1.5);
+    /* font-style: normal; */
+    color: #f3b045;
+}
+
+ul{
+    text-align: right;
+    display: inline-block;
+    
+}
+ul li{
+    display: inline-block;
+    margin: 50px 30px;
+    margin-left: -3px;
+    padding: 20px 10px;
+
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    transition: .5s;
+    
+    display: inline-block;
+    position: relative;
+    
+}
+ul li a:hover{
+    color: #fbb03c;
+}
+ul li a::before{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .4s;
+}
+ul li:hover a::before{
+    width: 100%;
+}
+.login{
+    width: 16%;
+    display: inline-block;
+    text-align: right;
+}
+
+/* button */
+.button {
+	margin-top: 15PX;
+	text-decoration: none;
+	font-size: 14px;
+	display: inline-block;
+	padding: 8px 30px;
+	background: #e6a43b;
+	position: relative;
+    box-shadow: 0 0 18px #2423236e;
+	z-index: 0;
+	color: rgb(255, 255, 255);
+	font-family: "Catamaran", sans-serif;
+	border-radius: 10px;
+    border-left:5px solid #fff;
+    border-right:5px solid #fff;
+    border-top:1px solid #fff;
+    border-bottom:1px solid #fff;
+}
+
+
+.button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 7px;
+    height: 100%;
+    background: #ffffff;
+    transition: .4s;
+    z-index: -1;
+    border-radius: 10px 0px 0px 10px;
+  
+}
+
+.button::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 7px;
+    height: 100%;
+    background: #ffffff;
+    transition: .4s;
+    z-index: -1;
+    border-radius: 0px 10px 10px 0px;
+  
+}
+
+
+.button:hover::before{
+    width: 50%;
+    background: #e6a43b;
+    z-index: -1;
+   
+}
+.button:hover::after{
+    width: 51%;
+    z-index: -1;
+    background: #e6a43b;
+
+}
+
+/*  */
+.containt{
+    color: white;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 300px;
+    left: 0;
+
+}
+.containt h2{
+    color: #e6a43b;
+    margin: 25px 0;
+    line-height: 70px;
+    font-size: 50px;
+
+}
+    
+.containt p{
+    color: #e6a43b;
+    font-size: 30px;
+    font-family: 'Architects Daughter', cursive;
+    font-style: italic;
+}
+
+/* -------------------About section----------------------- */
+.about{
+    width: 70%;
+    margin: 80px auto;
+}
+.heading{
+    font-size: 35px;
+    font-weight: bolder;
+    margin: 25px 0;
+}
+.about p{
+    font-size: 18px;
+    margin-top: 20px;
+}
+.about-s{
+    width: 38%;
+    display: inline-block;
+    margin-right: 6%;
+}
+.about-e{
+    width: 38%;
+    display: inline-block;
+}
+
+/* --------------------Service Section-------------------------- */
+.service{
+    width: 70%;
+    margin:80px auto;
+}
+.box{
+    width: 31%;
+    display: inline-block;
+    padding: 40px;
+    border-bottom: 4px solid #e6a43b;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid #ddd;
+    margin: 10px;
+    transition: .5s;
+}
+.box:hover{
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    transform: scale(1.04);
+}
+.box:hover h4{
+    color: #e6a43b;
+}
+.s-icon {
+    color: #e6a43b;
+    font-size: 30px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: .5s;
+}
+.box:hover .s-icon{
+    color: black;
+    background-color: #e6a43b;
+}
+/* ----------------------Call Section------------------------- */
+.call{
+    color: white;
+    background-image: url(https://images.unsplash.com/photo-1448301858776-07f780e9c9da?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGFyY2hpdGVjdHVyZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80);
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+.call-s {
+	width: 40%;
+	display: inline-block;
+	margin: 160px 300px;
+}
+.baton {
+        display: inline-block;
+        text-align: center;
+        width: 20%;
+        margin-left: -100px;
+}
+
+/* -----------------------Container Section------------------------ */
+.container{
+    width: 70%;
+    margin-bottom: 100px;
+}
+.pra{
+    width: 45%;
+    margin-top: 8%;
+    display: inline-block;
+    padding: 40px;
+}
+
+.img{
+    width: 50%;
+    display: inline-block;
+    margin-top: 10%;
+}
+.icon{
+    color: #fbb03c;
+    display: inline-block;
+    font-size: 30px;
+    margin-left: -40px;
+    margin-right: 10px;
+}
+
+/* ---------------------Shongkha Section---------------------- */
+.shongkha{
+    color: white;
+    text-align: center;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20201022/pngtree-abstract-technology-background-futuristic-gaming-splash-banner-image_430303.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:top center;
+
+}
+.h-part h2{
+    color: #fbb03c;
+    font-size: 40px;
+    margin-top: 100px;
+    display: inline-block;
+}
+.h-part p{
+    font-size: 18px;
+    font-style: italic;
+    word-spacing: 1px;
+}
+.shonka{
+    display: inline-block;
+    margin: 40px 100px;
+}
+/* ----------------------------Footer Section------------------------------ */
+.footer{
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #000;
+    display: inline-block;
+}
+ul li {
+	display: inline-block;
+	margin: 10px 30px;
+	margin-left: -5px;
+}
+.menu-i ul li i{
+    color: black;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+    transition: .5s;
+}
+.menu-i ul li i:hover{
+    color: black;
+    background-color: #fbb03c;
+    cursor: pointer;
+    transform: scale(1.4);
+}
+.f-bottom{
+    font-size: 18px;
+    word-spacing: 2px;
+}
+.ff{
+    color: #fbb03c;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+/*====================================== button =======================================*/
